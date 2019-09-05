@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MusicApp</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">  
+  
+  </head>
+
+  <body>
+    <header> Music App </header> <br>
+      <% if logged_in? %>
+        <form action="<%= users_url %>" method="POST">
+        <a href="<% users_url %>">Sign Out></a>
+        </form>
+        <% else %>
+        <form action="<%= session_url %>" method="POST">
+        <a href="<% users_url %>">Log In></a>
+        </form>
+      <% end %>
+    
+    <%= yield %>
+  </body>
+</html>

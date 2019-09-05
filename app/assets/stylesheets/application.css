@@ -1,0 +1,108 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+header {
+  margin: 10;
+	padding: 10;
+	border: 50;
+	border: 3px solid rgb(215, 197, 210);
+	font-size: 80px;
+  font-family: 'Roboto', sans-serif;
+  color: rgb(81, 82, 75);
+  vertical-align: baseline;
+  background-color: rgb(97, 4, 85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+	margin: 10px;
+	padding: 25px;
+	border: 50px;
+	font-size: 10px;
+  font-family: 'Roboto', sans-serif;
+  color: rgb(81, 82, 75);
+  vertical-align: baseline;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+label {
+	padding-left: 25px;
+}
+a {
+	position: absolute;
+  right: 0px;
+  width: 300px;
+  padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
